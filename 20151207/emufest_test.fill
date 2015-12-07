@@ -1,0 +1,15 @@
+insert into
+institutions (name)
+values ("Tempo Irreale");
+
+insert into
+titles (title, composition_date, duration, premiere_date, institution_id)
+values ("ai limiti del carico di rottura dell'anima", "2014-01-23", "0000-00-00 00:16:00", "2015-12-07", 1);
+
+insert into
+authors (first, last)
+values ("Eriberto", "Cerioni");
+
+insert into
+authors_titles (title_id, author_id)
+values (1, 1);

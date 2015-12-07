@@ -1,0 +1,21 @@
+CREATE TABLE titles
+(id integer primary key,
+title varchar(4096),
+composition_date datetime,
+duration datetime,
+-- PREMIERE
+premiere_date datetime,
+institution_id integer);
+
+CREATE TABLE institutions
+(id integer primary key,
+name varchar(4096));
+
+CREATE TABLE authors
+(id integer primary key,
+first varchar(128),
+last varchar(128));
+
+CREATE TABLE authors_titles
+(title_id integer,
+author_id integer);
